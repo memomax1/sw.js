@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>صفحتي</title>
+<title>Online Earning Hub</title>
+<meta name="description" content="Explore online earning platforms and follow for practical tips and updates.">
 
 <!-- Monetag In-Page Push -->
 <script>(function(s){s.dataset.zone='12194798',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
@@ -16,42 +17,55 @@
 
 <style>
   :root {
-    --bg:#0f1319; --bar:#171c24; --line:#262d38; --text:#e8ecf2; --muted:#8b95a5; --accent:#4f8cff;
+    --bg:#0b0f15; --panel:#131923; --line:#232c3a; --text:#eef2f8; --muted:#92a0b5;
+    --accent:#4f8cff; --accent2:#7c5cff;
   }
   * { box-sizing:border-box; }
   html, body { margin:0; width:100%; height:100%; background:var(--bg); color:var(--text);
-    font-family:"Segoe UI",Tahoma,Arial,sans-serif; overflow:hidden; }
+    font-family:Inter,"Segoe UI",system-ui,-apple-system,Arial,sans-serif; overflow:hidden; }
 
   .page { display:flex; flex-direction:column; width:100%; height:100%; }
 
-  /* الشريط العلوي */
-  .bar { flex:0 0 auto; display:flex; align-items:center; justify-content:space-between; gap:12px;
-    padding:8px 14px; padding-top:max(8px, env(safe-area-inset-top, 0px));
-    background:var(--bar); border-bottom:1px solid var(--line); }
-  .brand { display:flex; align-items:center; gap:8px; font-weight:600; font-size:15px; }
-  .dot { width:9px; height:9px; border-radius:50%; background:var(--accent); box-shadow:0 0 8px var(--accent); }
-  .open { color:var(--muted); font-size:13px; text-decoration:none; padding:5px 10px;
-    border:1px solid var(--line); border-radius:8px; transition:.15s; white-space:nowrap; }
-  .open:hover { color:var(--text); border-color:var(--accent); }
+  /* Top bar */
+  .bar { flex:0 0 auto; display:flex; align-items:center; justify-content:space-between; gap:14px;
+    padding:10px 16px; padding-top:max(10px, env(safe-area-inset-top, 0px));
+    background:linear-gradient(180deg,#161d29,var(--panel)); border-bottom:1px solid var(--line); }
+  .brand { display:flex; align-items:center; gap:10px; min-width:0; }
+  .logo { flex:0 0 auto; width:30px; height:30px; border-radius:9px;
+    background:linear-gradient(135deg,var(--accent),var(--accent2)); box-shadow:0 0 14px rgba(79,140,255,.45); }
+  .titles { min-width:0; }
+  .title { font-size:15px; font-weight:700; letter-spacing:.2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .sub { font-size:12px; color:var(--muted); margin-top:1px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 
-  /* مكان بانر إعلاني (مخفي لحد ما تضيف الكود) */
-  .ad { display:none; flex:0 0 auto; text-align:center; background:var(--bar);
+  .actions { display:flex; align-items:center; gap:8px; flex:0 0 auto; }
+  .btn { font-size:13px; font-weight:600; text-decoration:none; padding:7px 14px; border-radius:9px;
+    border:1px solid var(--line); color:var(--muted); transition:.15s; white-space:nowrap; }
+  .btn:hover { color:var(--text); border-color:var(--accent); }
+  .btn.primary { color:#fff; border-color:transparent;
+    background:linear-gradient(135deg,var(--accent),var(--accent2)); }
+  .btn.primary:hover { filter:brightness(1.1); }
+  .btn.offer { color:#ffd166; border-color:rgba(255,209,102,.45); }
+  .btn.offer:hover { color:#ffe29a; border-color:#ffd166; }
+
+  /* Optional banner slot (hidden until you add a code and remove display:none) */
+  .ad { display:none; flex:0 0 auto; text-align:center; background:var(--panel);
     border-bottom:1px solid var(--line); padding:4px; max-height:110px; overflow:hidden; }
 
-  /* منطقة الفريم */
+  /* Frame area */
   .frame { position:relative; flex:1 1 auto; min-height:0; margin:8px;
     margin-bottom:max(8px, env(safe-area-inset-bottom, 0px));
-    border:1px solid var(--line); border-radius:12px; overflow:hidden; background:#fff;
-    box-shadow:0 4px 24px rgba(0,0,0,.35); }
+    border:1px solid var(--line); border-radius:14px; overflow:hidden; background:#fff;
+    box-shadow:0 8px 32px rgba(0,0,0,.45); }
   .frame iframe { display:block; width:100%; height:100%; border:0; background:#fff; }
-
   .loader { position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
     background:var(--bg); color:var(--muted); font-size:14px; transition:opacity .3s; }
   .loader.hide { opacity:0; pointer-events:none; }
 
-  @media (max-width:600px) {
-    .frame { margin:4px; border-radius:8px; }
-    .bar { padding:6px 10px; }
+  @media (max-width:640px) {
+    .bar { padding:8px 10px; }
+    .sub { display:none; }
+    .btn { padding:6px 10px; font-size:12px; }
+    .frame { margin:4px; border-radius:10px; }
   }
 </style>
 </head>
@@ -60,17 +74,30 @@
 <div class="page">
 
   <header class="bar">
-    <div class="brand"><span class="dot"></span> صفحتي</div>
-    <a class="open" href="https://lltrco.com/?r=mahmoudyoussef20" target="_blank" rel="noopener">فتح في صفحة جديدة ↗</a>
+    <div class="brand">
+      <div class="logo"></div>
+      <div class="titles">
+        <div class="title">Online Earning Hub</div>
+        <div class="sub">Explore the platform below and follow for practical tips and updates.</div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <!-- Remove the "hidden" attribute and set your real link (Telegram, X, YouTube, etc.) -->
+      <a class="btn primary" id="follow" href="#" target="_blank" rel="noopener" hidden>Follow for updates</a>
+      <!-- Monetag Direct Link (user-initiated click) -->
+      <a class="btn offer" href="https://uplcm.com/4/12187715" target="_blank" rel="noopener sponsored">Sponsored offer</a>
+      <a class="btn" href="https://lltrco.com/?r=mahmoudyoussef20" target="_blank" rel="noopener">Open in new tab ↗</a>
+    </div>
   </header>
 
   <div class="ad">
-    <!-- الصق هنا كود بانر (مثل A-ADS) ثم امسح display:none من .ad -->
+    <!-- Paste an optional banner code here (e.g. A-ADS), then remove display:none from .ad -->
   </div>
 
   <main class="frame">
-    <div class="loader" id="loader">جارٍ التحميل...</div>
-    <iframe src="https://lltrco.com/?r=mahmoudyoussef20" title="الصفحة" allow="fullscreen"
+    <div class="loader" id="loader">Loading...</div>
+    <iframe src="https://lltrco.com/?r=mahmoudyoussef20" title="Platform preview" allow="fullscreen"
             referrerpolicy="no-referrer-when-downgrade"
             onload="document.getElementById('loader').classList.add('hide')"></iframe>
   </main>
