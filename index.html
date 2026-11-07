@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -6,155 +6,180 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#080e1c">
 
-<title>The Digital Wealth Radar | Global Earning Trends 2026</title>
-
-<meta name="description" content="Explore the latest global online earning trends, AI opportunities, freelancing, digital businesses and innovative income strategies in 2026.">
-
+<title>The Digital Wealth Radar | 2026</title>
+<meta name="description" content="Discover global online earning trends, AI opportunities, freelancing, digital businesses and innovative income strategies in 2026.">
 <meta name="robots" content="index, follow">
 
 <style>
-:root {
---bg:#080e1c;
---panel:#101a2c;
---line:#263c5c;
---text:#eaf1ff;
---muted:#91a4c3;
---accent:#48d6c5;
---purple:#825bff;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-* {
-margin:0;
-padding:0;
-box-sizing:border-box;
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-background:var(--bg);
-color:var(--text);
-font-family:Arial,sans-serif;
-padding:15px;
-line-height:1.8;
+    background: #080e1c;
+    color: #eaf1ff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    padding: 25px 15px 40px;
 }
 
 .container {
-max-width:1000px;
-margin:auto;
+    max-width: 1000px;
+    margin: auto;
 }
 
+/* HEADER */
 .header {
-text-align:center;
-padding:35px 15px;
-border-bottom:1px solid var(--line);
+    text-align: center;
+    padding: 35px 15px;
+    border-bottom: 1px solid #263957;
 }
 
 .header h1 {
-color:var(--accent);
-font-size:clamp(25px,5vw,36px);
-letter-spacing:1px;
+    color: #48d6c5;
+    font-size: 32px;
+    letter-spacing: 1px;
 }
 
 .header p {
-color:var(--muted);
-margin-top:12px;
+    color: #91a4c3;
+    margin-top: 12px;
 }
 
 .live {
-display:inline-block;
-color:#45e5a5;
-font-size:12px;
-margin-top:18px;
-letter-spacing:2px;
+    display: inline-block;
+    color: #45e5a5;
+    font-size: 12px;
+    margin-top: 18px;
+    letter-spacing: 2px;
 }
 
+/* TYPING TERMINAL */
 .terminal {
-background:var(--panel);
-border:1px solid var(--line);
-border-radius:12px;
-padding:25px;
-margin-top:30px;
-min-height:450px;
-box-shadow:0 10px 35px #0005;
+    background: #101a2c;
+    border: 1px solid #263c5c;
+    border-radius: 14px;
+    padding: 35px;
+    margin-top: 30px;
+    min-height: 560px;
+    box-shadow: 0 10px 35px #0005;
 }
 
 .terminal-head {
-color:var(--accent);
-font-size:13px;
-border-bottom:1px solid var(--line);
-padding-bottom:15px;
-margin-bottom:20px;
+    color: #48d6c5;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    border-bottom: 1px solid #293b57;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .line {
-font-size:15px;
-line-height:1.9;
-margin:15px 0;
-color:#d8e5fa;
-overflow-wrap:anywhere;
+    font-size: 20px;
+    line-height: 1.9;
+    margin: 20px 0;
+    padding: 6px 0 6px 16px;
+    border-left: 3px solid #48d6c5;
+    color: #e6efff;
+    overflow-wrap: anywhere;
 }
 
 .number {
-color:var(--accent);
-font-weight:bold;
+    color: #4bdac7;
+    font-weight: bold;
+    font-size: 22px;
 }
 
-.cursor {
-display:inline-block;
-width:8px;
-height:17px;
-background:var(--accent);
-margin-left:4px;
-vertical-align:middle;
-animation:blink .7s infinite;
-}
-
-@keyframes blink {
-50% {opacity:0;}
+/* LARGE SPACE BEFORE FRAME */
+.frame-section {
+    margin-top: 150px;
+    padding-top: 35px;
+    border-top: 1px solid #263957;
 }
 
 .section-title {
-margin:40px 0 15px;
-font-size:21px;
-color:var(--accent);
+    margin: 0 0 20px;
+    font-size: 20px;
+    color: #48d6c5;
 }
 
 .frame-box {
-background:var(--panel);
-border:1px solid var(--line);
-padding:10px;
-border-radius:12px;
+    background: #101a2c;
+    border: 1px solid #263c5c;
+    padding: 10px;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 iframe {
-width:100%;
-height:650px;
-border:none;
-border-radius:8px;
-background:white;
-display:block;
+    width: 100%;
+    height: 650px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    display: block;
 }
 
 .help {
-color:var(--muted);
-font-size:12px;
-text-align:center;
-margin-top:10px;
+    color: #91a4c3;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
 }
 
+.direct-link {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.direct-link a {
+    color: #48d6c5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FOOTER */
 .footer {
-text-align:center;
-color:#71839f;
-font-size:12px;
-padding:25px 5px;
-border-top:1px solid var(--line);
-margin-top:35px;
+    text-align: center;
+    color: #71839f;
+    font-size: 12px;
+    padding: 25px 5px;
+    margin-top: 35px;
+    border-top: 1px solid #263957;
 }
 
+/* MOBILE */
 @media(max-width:600px) {
-.header h1 {font-size:25px;}
-.terminal {padding:16px;}
-.line {font-size:13px;}
-iframe {height:550px;}
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .terminal {
+        padding: 16px;
+    }
+
+    .line {
+        font-size: 16px;
+        padding-left: 12px;
+    }
+
+    .number {
+        font-size: 17px;
+    }
+
+    iframe {
+        height: 550px;
+    }
+
+    .frame-section {
+        margin-top: 110px;
+    }
 }
 </style>
 </head>
@@ -163,91 +188,80 @@ iframe {height:550px;}
 
 <div class="container">
 
+<!-- HEADER -->
 <header class="header">
-
-<h1>THE DIGITAL WEALTH RADAR</h1>
-
-<p>Discover the Global Online Earning Revolution</p>
-
-<div class="live">
-● GLOBAL TRENDS MONITOR 2026
-</div>
-
+    <h1>THE DIGITAL WEALTH RADAR</h1>
+    <p>Discover the Global Online Earning Revolution</p>
+    <div class="live">● GLOBAL TRENDS MONITOR 2026</div>
 </header>
 
-
+<!-- TOP 10 CONTENT -->
 <section class="terminal">
 
-<div class="terminal-head">
-SYSTEM REPORT / TOP 10 MONEY TRENDS
-</div>
+    <div class="terminal-head">
+        SYSTEM REPORT / TOP 10 MONEY TRENDS
+    </div>
 
-<div id="typingArea"></div>
+    <div id="typingArea"></div>
 
 </section>
 
+<!-- LARGE SEPARATION + LLTRCO FRAME -->
+<section class="frame-section">
 
-<h2 class="section-title">
-Explore More Opportunities
-</h2>
+    <h2 class="section-title">
+        Explore More Opportunities
+    </h2>
 
-<div class="frame-box">
+    <div class="frame-box">
 
-<!-- SECOND WEBSITE FRAME -->
+        <iframe
+            src="https://lltrco.com/?r=mahmoudyoussef20"
+            title="LLTRCO Platform"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="fullscreen">
+        </iframe>
 
-<iframe
-src="https://example.com/"
-title="Additional Website"
-loading="eager"
-referrerpolicy="strict-origin-when-cross-origin">
-</iframe>
+    </div>
 
-</div>
+    <p class="help">
+        If the platform does not load, use the direct access link below.
+    </p>
 
-<p class="help">
-Explore additional online resources and opportunities.
-</p>
+    <div class="direct-link">
+        <a
+            href="https://lltrco.com/?r=mahmoudyoussef20"
+            target="_blank"
+            rel="noopener sponsored">
+            Open LLTRCO Directly ↗
+        </a>
+    </div>
 
+</section>
 
+<!-- FOOTER -->
 <footer class="footer">
-
-THE DIGITAL WEALTH RADAR © 2026
-
-<br>
-
-Explore. Learn. Build Your Digital Future.
-
+    THE DIGITAL WEALTH RADAR © 2026
+    <br><br>
+    Explore. Learn. Build Your Digital Future.
 </footer>
 
 </div>
 
-
 <!-- TYPING EFFECT -->
-
 <script>
-
 const topics = [
-
 "AI-Powered Income: Artificial intelligence is creating new opportunities for digital entrepreneurs.",
-
 "Freelancing Opportunities: Global marketplaces connect skilled professionals with international clients.",
-
 "Affiliate Marketing: Creators earn commissions by promoting products and services online.",
-
 "Digital Product Sales: E-books, templates, and online courses are creating new revenue streams.",
-
 "YouTube Automation: AI-assisted content production is transforming the creator economy.",
-
 "Microtask Platforms: Surveys, app testing, and online tasks offer additional earning opportunities.",
-
 "Print-on-Demand: Entrepreneurs sell customized products without managing physical inventory.",
-
 "Remote Digital Services: SEO, graphic design, web development, and virtual assistance remain in demand.",
-
 "AI Content Creation: Businesses increasingly use AI tools for marketing, video, and content production.",
-
 "Online Business Automation: Smart workflows help entrepreneurs manage and scale digital businesses."
-
 ];
 
 const area = document.getElementById("typingArea");
@@ -257,133 +271,57 @@ let charIndex = 0;
 
 function typeNext() {
 
-if(topicIndex >= topics.length) return;
+    if (topicIndex >= topics.length) return;
 
-let text = topics[topicIndex];
+    const text = topics[topicIndex];
 
-if(charIndex === 0) {
+    if (charIndex === 0) {
+        const line = document.createElement("div");
+        line.className = "line";
+        line.id = "line-" + topicIndex;
 
-const line = document.createElement("div");
+        line.innerHTML =
+            '<span class="number">' +
+            String(topicIndex + 1).padStart(2, "0") +
+            ' / </span><span class="content"></span>';
 
-line.className = "line";
-line.id = "line-" + topicIndex;
+        area.appendChild(line);
+    }
 
-line.innerHTML =
-'<span class="number">' +
-String(topicIndex + 1).padStart(2, "0") +
-' / </span><span class="content"></span>';
+    const currentLine = document.querySelector(
+        "#line-" + topicIndex + " .content"
+    );
 
-area.appendChild(line);
+    currentLine.textContent = text.substring(0, charIndex + 1);
 
-}
+    charIndex++;
 
-const currentLine = document.querySelector(
-"#line-" + topicIndex + " .content"
-);
-
-currentLine.textContent =
-text.substring(0, charIndex + 1);
-
-charIndex++;
-
-if(charIndex < text.length) {
-
-setTimeout(typeNext, 25);
-
-} else {
-
-topicIndex++;
-charIndex = 0;
-
-setTimeout(typeNext, 450);
-
-}
-
+    if (charIndex < text.length) {
+        setTimeout(typeNext, 25);
+    } else {
+        topicIndex++;
+        charIndex = 0;
+        setTimeout(typeNext, 450);
+    }
 }
 
 typeNext();
-
 </script>
 
-
-<!-- MONETAG ADVERTISING INTEGRATION -->
-
+<!-- MONETAG ADVERTISEMENT -->
 <script>
-
-(function(){
-
-var done = false;
-
-function add(zone,src){
-
-var s = document.createElement('script');
-
-s.async = true;
-
-s.dataset.zone = zone;
-
-s.src = src;
-
-document.body.appendChild(s);
-
-}
-
-function run(){
-
-if(done) return;
-
-done = true;
-
-// MONETAG ZONE 1
-add(
-'12194798',
-'https://nap5k.com/tag.min.js'
-);
-
-// MONETAG ZONE 2
-add(
-'12194811',
-'https://n6wxm.com/vignette.min.js'
-);
-
-}
-
-function later(){
-
-var events = [
-'scroll',
-'touchstart',
-'click',
-'keydown'
-];
-
-events.forEach(function(e){
-
-addEventListener(e,run,{
-once:true,
-passive:true
-});
-
-});
-
-// Load Monetag after 3 seconds if no interaction occurs
-setTimeout(run,3000);
-
-}
-
-if(document.readyState === 'complete'){
-
-later();
-
-}else{
-
-addEventListener('load',later);
-
-}
-
-})();
-
+setTimeout(function() {
+    (function(s) {
+        s.dataset.zone = '12194798';
+        s.src = 'https://nap5k.com/tag.min.js';
+    })(
+        document.body.appendChild(
+            document.createElement('script')
+        )
+    );
+}, 3000);
 </script>
 
 </body>
 </html>
+```
