@@ -6,305 +6,311 @@
 <meta name="theme-color" content="#080e1c">
 
 <title>The Digital Wealth Radar | 2026</title>
-<meta name="description" content="Discover global online earning trends, AI opportunities, freelancing, digital businesses and innovative income strategies in 2026.">
+<meta name="description" content="The top 10 online income trends for 2026: AI, freelancing, digital products and more, each with a practical example and a first step.">
 <meta name="robots" content="index, follow">
+<!-- TODO: put your real page URL -->
+<link rel="canonical" href="https://example.com/">
+
+<!-- Social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Digital Wealth Radar 2026">
+<meta property="og:description" content="The top 10 online income trends, each with a practical example and a first step.">
+<!-- TODO: put a real 1200x630 image URL -->
+<meta property="og:image" content="https://example.com/preview.jpg">
+<meta property="og:url" content="https://example.com/">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "The Digital Wealth Radar 2026",
+  "description": "Online income trends for 2026: AI, freelancing, digital products and more.",
+  "inLanguage": "en"
+}
+</script>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root{
+  --bg:#080e1c;
+  --card:#101a2c;
+  --card-2:#14213a;
+  --line:#263957;
+  --text:#eaf1ff;
+  --muted:#a9b8d3;
+  --accent:#48d6c5;
+  --accent-ink:#06201d;
+  --warn:#ffd479;
+  --radius:14px;
+  --gap:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  line-height:1.7;padding:0 16px 40px;
+}
+.container{max-width:1000px;margin:auto}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+/* top bar */
+.topbar{padding:16px 0}
+.brand{color:var(--accent);font-weight:700;letter-spacing:1px;font-size:14px}
+
+/* hero */
+.hero{text-align:center;padding:40px 8px 50px;border-bottom:1px solid var(--line)}
+.live{color:#45e5a5;font-size:12px;letter-spacing:2px}
+.hero h1{color:var(--accent);font-size:clamp(26px,5vw,40px);margin:14px 0 10px;line-height:1.3;letter-spacing:1px}
+.hero .sub{color:var(--muted);font-size:clamp(16px,2.4vw,19px);max-width:640px;margin:0 auto}
+.typed{display:block;min-height:3.4em;margin-top:18px;color:var(--text);font-size:clamp(15px,2.2vw,18px)}
+.btn{
+  display:inline-block;background:var(--accent);color:var(--accent-ink);
+  font-weight:700;text-decoration:none;padding:13px 30px;border-radius:999px;margin-top:22px;
+  transition:transform .15s ease,box-shadow .15s ease;
+}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px #48d6c540}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent);margin-left:10px}
+
+/* notice */
+.notice{
+  background:#2a2410;border:1px solid #5c4d1c;color:var(--warn);
+  border-radius:var(--radius);padding:14px 18px;margin-top:30px;font-size:14px
 }
 
-html {
-    scroll-behavior: smooth;
+/* cards */
+.section-title{font-size:22px;color:var(--accent);margin:50px 0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:var(--gap)}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px;display:flex;flex-direction:column;gap:10px;
 }
+.card .n{color:var(--accent);font-weight:700;font-size:13px;letter-spacing:1.5px}
+.card h3{font-size:18px;line-height:1.4}
+.card p{color:var(--muted);font-size:15px}
+.card .ex,.card .st{font-size:14px;color:var(--text);background:var(--card-2);border-radius:10px;padding:10px 12px}
+.card .ex b,.card .st b{color:var(--accent)}
 
-body {
-    background: #080e1c;
-    color: #eaf1ff;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    padding: 25px 15px 40px;
+/* frame */
+.frame-section{margin-top:70px;padding-top:35px;border-top:1px solid var(--line)}
+.frame-section .section-title{margin:0 0 20px}
+.frame-box{background:var(--card);border:1px solid var(--line);padding:10px;border-radius:12px;overflow:hidden}
+iframe{width:100%;height:650px;border:none;border-radius:8px;background:#fff;display:block}
+.help{color:var(--muted);font-size:13px;text-align:center;margin-top:10px}
+.direct-link{text-align:center;margin-top:14px}
+.direct-link a{font-weight:700;text-decoration:none}
+.disclosure{color:var(--muted);font-size:13px;text-align:center;margin-top:14px}
+
+/* info sections */
+.info{margin-top:50px;border-top:1px solid var(--line);padding-top:24px}
+.info h2{font-size:18px;color:var(--accent);margin:22px 0 6px}
+.info p{color:var(--muted);font-size:14px}
+
+/* footer */
+.footer{text-align:center;color:#8d9db9;font-size:13px;padding:30px 5px 0;margin-top:40px;border-top:1px solid var(--line)}
+.footer nav{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:center;margin-bottom:14px}
+.footer a{color:var(--muted);text-decoration:none}
+.footer a:hover{color:var(--accent)}
+
+/* reveal animation */
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .btn{transition:none}
 }
-
-.container {
-    max-width: 1000px;
-    margin: auto;
-}
-
-/* HEADER */
-.header {
-    text-align: center;
-    padding: 35px 15px;
-    border-bottom: 1px solid #263957;
-}
-
-.header h1 {
-    color: #48d6c5;
-    font-size: 32px;
-    letter-spacing: 1px;
-}
-
-.header p {
-    color: #91a4c3;
-    margin-top: 12px;
-}
-
-.live {
-    display: inline-block;
-    color: #45e5a5;
-    font-size: 12px;
-    margin-top: 18px;
-    letter-spacing: 2px;
-}
-
-/* TYPING TERMINAL */
-.terminal {
-    background: #101a2c;
-    border: 1px solid #263c5c;
-    border-radius: 14px;
-    padding: 35px;
-    margin-top: 30px;
-    min-height: 560px;
-    box-shadow: 0 10px 35px #0005;
-}
-
-.terminal-head {
-    color: #48d6c5;
-    font-size: 15px;
-    letter-spacing: 1.5px;
-    font-weight: 600;
-    border-bottom: 1px solid #293b57;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
-}
-
-.line {
-    font-size: 20px;
-    line-height: 1.9;
-    margin: 20px 0;
-    padding: 6px 0 6px 16px;
-    border-left: 3px solid #48d6c5;
-    color: #e6efff;
-    overflow-wrap: anywhere;
-}
-
-.number {
-    color: #4bdac7;
-    font-weight: bold;
-    font-size: 22px;
-}
-
-/* LARGE SPACE BEFORE FRAME */
-.frame-section {
-    margin-top: 150px;
-    padding-top: 35px;
-    border-top: 1px solid #263957;
-}
-
-.section-title {
-    margin: 0 0 20px;
-    font-size: 20px;
-    color: #48d6c5;
-}
-
-.frame-box {
-    background: #101a2c;
-    border: 1px solid #263c5c;
-    padding: 10px;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-iframe {
-    width: 100%;
-    height: 650px;
-    border: none;
-    border-radius: 8px;
-    background: white;
-    display: block;
-}
-
-.help {
-    color: #91a4c3;
-    font-size: 12px;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.direct-link {
-    text-align: center;
-    margin-top: 18px;
-}
-
-.direct-link a {
-    color: #48d6c5;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* FOOTER */
-.footer {
-    text-align: center;
-    color: #71839f;
-    font-size: 12px;
-    padding: 25px 5px;
-    margin-top: 35px;
-    border-top: 1px solid #263957;
-}
-
-/* MOBILE */
-@media(max-width:600px) {
-    .header h1 {
-        font-size: 25px;
-    }
-
-    .terminal {
-        padding: 16px;
-    }
-
-    .line {
-        font-size: 16px;
-        padding-left: 12px;
-    }
-
-    .number {
-        font-size: 17px;
-    }
-
-    iframe {
-        height: 550px;
-    }
-
-    .frame-section {
-        margin-top: 110px;
-    }
+@media(max-width:600px){
+  iframe{height:550px}
+  .frame-section{margin-top:50px}
+  .btn.ghost{margin-left:0;margin-top:12px}
 }
 </style>
 </head>
 
 <body>
-
 <div class="container">
 
-<!-- HEADER -->
-<header class="header">
-    <h1>THE DIGITAL WEALTH RADAR</h1>
-    <p>Discover the Global Online Earning Revolution</p>
-    <div class="live">● GLOBAL TRENDS MONITOR 2026</div>
+<div class="topbar">
+  <span class="brand">THE DIGITAL WEALTH RADAR</span>
+</div>
+
+<header class="hero">
+  <div class="live">● GLOBAL TRENDS MONITOR 2026</div>
+  <h1>THE DIGITAL WEALTH RADAR</h1>
+  <p class="sub">The top 10 online income trends, each with a practical example and a first step.</p>
+  <span class="typed" id="typed" aria-live="off"></span>
+  <a class="btn" href="#trends">Get started</a>
+  <a class="btn ghost" href="#platform">Explore the platform</a>
 </header>
 
-<!-- TOP 10 CONTENT -->
-<section class="terminal">
+<div class="notice" role="note">
+  Note: online income is not guaranteed and varies by skill, time and effort. This content is educational, not financial advice.
+</div>
 
-    <div class="terminal-head">
-        SYSTEM REPORT / TOP 10 MONEY TRENDS
-    </div>
+<main>
+<h2 class="section-title" id="trends">Top 10 Trends</h2>
 
-    <div id="typingArea"></div>
+<div class="grid">
 
+<article class="card reveal">
+  <span class="n">01</span>
+  <h3>AI-Powered Income</h3>
+  <p>AI tools cut the time needed for writing, design and translation, so you can deliver services faster.</p>
+  <div class="ex"><b>Example:</b> Drafting product descriptions for an online store, then reviewing them yourself.</div>
+  <div class="st"><b>Start:</b> Pick one skill and test one AI tool for a week.</div>
+</article>
+
+<article class="card reveal">
+  <span class="n">02</span>
+  <h3>Freelancing Opportunities</h3>
+  <p>Global marketplaces connect skilled professionals with international clients.</p>
+  <div class="ex"><b>Example:</b> Logo design, copywriting or translation for overseas clients.</div>
+  <div class="st"><b>Start:</b> Prepare two work samples and a clear profile.</div>
+</article>
+
+<article class="card reveal">
+  <span class="n">03</span>
+  <h3>Affiliate Marketing</h3>
+  <p>Creators earn commissions by promoting products and services through their own links.</p>
+  <div class="ex"><b>Example:</b> Reviewing a software tool in an article with a referral link and clear disclosure.</div>
+  <div class="st"><b>Start:</b> Promote only what you've actually tried, and always disclose the referral.</div>
+</article>
+
+<article class="card reveal">
+  <span class="n">04</span>
+  <h3>Digital Product Sales</h3>
+  <p>E-books, templates and online courses are created once and sold repeatedly.</p>
+  <div class="ex"><b>Example:</b> A monthly budget template as a spreadsheet.</div>
+  <div class="st"><b>Start:</b> Solve one small, specific problem for a specific audience.</div>
+</article>
+
+<article class="card reveal">
+  <span class="n">05</span>
+  <h3>YouTube Automation</h3>
+  <p>AI-assisted production is transforming the creator economy, but quality and originality still decide who wins.</p>
+  <div class="ex"><b>Example:</b> A short educational channel with AI-assisted scripts.</div>
+  <div class="st"><b>Start:</b> Choose one niche and post consistently for 30 days.</div>
+</article>
+
+<article class="card reveal">
+  <span class="n">06</span>
+  <h3>Microtask Platforms</h3>
+  <p>Surveys, app testing and simple online tasks: limited income, but an easy entry point.</p>
+  <div class="ex"><b>Example:</b> Testing a new app and writing feedback on your experience.</div>
+  <div class="st"><b>Start:</b> Use well-known platforms and never pay to sign up.</div>
+</article>
+
+<article class="card reveal">
+  <span class="n">07</span>
+  <h3>Print-on-Demand</h3>
+  <p>Sell customized products without managing inventory; items are printed and shipped after each order.</p>
+  <div class="ex"><b>Example:</b> T-shirts or mugs designed for a specific hobby audience.</div>
+  <div class="st"><b>Start:</b> Order a sample for yourself before selling.</div>
+</article>
+
+<article class="card reveal">
+  <span class="n">08</span>
+  <h3>Remote Digital Services</h3>
+  <p>SEO, graphic design, web development and virtual assistance remain in demand.</p>
+  <div class="ex"><b>Example:</b> Building a landing page for a small business.</div>
+  <div class="st"><b>Start:</b> Offer one service with a clear price and delivery time.</div>
+</article>
+
+<article class="card reveal">
+  <span class="n">09</span>
+  <h3>AI Content Creation</h3>
+  <p>Businesses use AI for marketing, video and content, and need people who can direct and review it well.</p>
+  <div class="ex"><b>Example:</b> Managing social media content for a local clinic or shop.</div>
+  <div class="st"><b>Start:</b> Build a short before/after portfolio showing your impact.</div>
+</article>
+
+<article class="card reveal">
+  <span class="n">10</span>
+  <h3>Online Business Automation</h3>
+  <p>Smart workflows help entrepreneurs manage and scale by saving time on replies, invoices and follow-ups.</p>
+  <div class="ex"><b>Example:</b> Linking an order form to a spreadsheet with an automatic customer email.</div>
+  <div class="st"><b>Start:</b> Automate one repetitive task that eats your time.</div>
+</article>
+
+</div>
+
+<section class="frame-section" id="platform">
+  <h2 class="section-title">Explore More Opportunities</h2>
+
+  <div class="frame-box">
+    <iframe
+      src="https://lltrco.com/?r=mahmoudyoussef20"
+      title="LLTRCO Platform"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="fullscreen">
+    </iframe>
+  </div>
+
+  <p class="help">If the platform does not load, use the direct access link below.</p>
+
+  <div class="direct-link">
+    <a href="https://lltrco.com/?r=mahmoudyoussef20" target="_blank" rel="noopener sponsored nofollow">Open LLTRCO Directly ↗</a>
+  </div>
+
+  <p class="disclosure">Disclosure: this is a referral link; we may earn a commission if you sign up through it, at no extra cost to you.</p>
+</section>
+</main>
+
+<section class="info" id="about">
+  <h2>About</h2>
+  <p>The Digital Wealth Radar is an informational site that tracks online work and income trends and explains them for beginners.</p>
+
+  <h2 id="privacy">Privacy Policy</h2>
+  <p>We don't collect personal data on this page. External links and the embedded platform are governed by their own policies.</p>
+
+  <h2 id="disclaimer">Disclaimer</h2>
+  <p>Content is for general information only and is not financial or legal advice. No income is guaranteed and results vary from person to person. This page contains referral links.</p>
+
+  <h2 id="contact">Contact</h2>
+  <!-- TODO: put your real email -->
+  <p><a href="mailto:contact@example.com">contact@example.com</a></p>
 </section>
 
-<!-- LARGE SEPARATION + LLTRCO FRAME -->
-<section class="frame-section">
-
-    <h2 class="section-title">
-        Explore More Opportunities
-    </h2>
-
-    <div class="frame-box">
-
-        <iframe
-            src="https://lltrco.com/?r=mahmoudyoussef20"
-            title="LLTRCO Platform"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allow="fullscreen">
-        </iframe>
-
-    </div>
-
-    <p class="help">
-        If the platform does not load, use the direct access link below.
-    </p>
-
-    <div class="direct-link">
-        <a
-            href="https://lltrco.com/?r=mahmoudyoussef20"
-            target="_blank"
-            rel="noopener sponsored">
-            Open LLTRCO Directly ↗
-        </a>
-    </div>
-
-</section>
-
-<!-- FOOTER -->
 <footer class="footer">
-    THE DIGITAL WEALTH RADAR © 2026
-    <br><br>
-    Explore. Learn. Build Your Digital Future.
+  <nav aria-label="Footer">
+    <a href="#about">About</a>
+    <a href="#privacy">Privacy</a>
+    <a href="#disclaimer">Disclaimer</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  THE DIGITAL WEALTH RADAR © 2026
 </footer>
 
 </div>
 
-<!-- TYPING EFFECT -->
 <script>
-const topics = [
-"AI-Powered Income: Artificial intelligence is creating new opportunities for digital entrepreneurs.",
-"Freelancing Opportunities: Global marketplaces connect skilled professionals with international clients.",
-"Affiliate Marketing: Creators earn commissions by promoting products and services online.",
-"Digital Product Sales: E-books, templates, and online courses are creating new revenue streams.",
-"YouTube Automation: AI-assisted content production is transforming the creator economy.",
-"Microtask Platforms: Surveys, app testing, and online tasks offer additional earning opportunities.",
-"Print-on-Demand: Entrepreneurs sell customized products without managing physical inventory.",
-"Remote Digital Services: SEO, graphic design, web development, and virtual assistance remain in demand.",
-"AI Content Creation: Businesses increasingly use AI tools for marketing, video, and content production.",
-"Online Business Automation: Smart workflows help entrepreneurs manage and scale digital businesses."
-];
+(function(){
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var el=document.getElementById('typed');
+  var full='See where digital opportunities are heading, and take one step today.';
+  el.setAttribute('aria-label',full);
+  if(reduce){
+    el.textContent=full;
+  }else{
+    var i=0;
+    (function step(){
+      el.textContent=full.slice(0,++i);
+      if(i<full.length)setTimeout(step,28);
+    })();
+  }
 
-const area = document.getElementById("typingArea");
-
-let topicIndex = 0;
-let charIndex = 0;
-
-function typeNext() {
-
-    if (topicIndex >= topics.length) return;
-
-    const text = topics[topicIndex];
-
-    if (charIndex === 0) {
-        const line = document.createElement("div");
-        line.className = "line";
-        line.id = "line-" + topicIndex;
-
-        line.innerHTML =
-            '<span class="number">' +
-            String(topicIndex + 1).padStart(2, "0") +
-            ' / </span><span class="content"></span>';
-
-        area.appendChild(line);
-    }
-
-    const currentLine = document.querySelector(
-        "#line-" + topicIndex + " .content"
-    );
-
-    currentLine.textContent = text.substring(0, charIndex + 1);
-
-    charIndex++;
-
-    if (charIndex < text.length) {
-        setTimeout(typeNext, 25);
-    } else {
-        topicIndex++;
-        charIndex = 0;
-        setTimeout(typeNext, 450);
-    }
-}
-
-typeNext();
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+    },{threshold:.12});
+    els.forEach(function(x){io.observe(x);});
+  }else{
+    els.forEach(function(x){x.classList.add('in');});
+  }
+})();
 </script>
-
 </body>
 </html>
