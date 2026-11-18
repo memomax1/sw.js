@@ -2,61 +2,51 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>الفريمات</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Memo Max - 8 Frames</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-    }
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 
-    body {
-      padding: 8px;
-      background: #111;
-    }
+body {
+  background: #111;
+  padding: 8px;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 8px;
-    }
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
 
-    iframe {
-      width: 100%;
-      height: 50vh;
-      border: 0;
-      border-radius: 8px;
-      background: #fff;
-    }
+iframe {
+  width: 100%;
+  height: 100vh;
+  border: 0;
+  background: #111;
+}
 
-    @media (max-width: 600px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+@media(max-width:600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <div class="grid">
-    <iframe data-src="https://lltrco.com/?r=mahmoudyoussef20"></iframe>
-    <iframe data-src="https://lltrco.com/?r=mahmoudyoussef2024"></iframe>
-    <iframe data-src="https://lltrco.com/?r=mmyy1"></iframe>
-    <iframe data-src="https://lltrco.com/?r=mmyy11"></iframe>
-  </div>
+<div class="container">
 
-  <script>
-    const frames = document.querySelectorAll('iframe[data-src]');
+  <iframe src="https://memomax1.github.io/memo/"></iframe>
 
-    frames.forEach(function(frame, index) {
-      setTimeout(function() {
-        frame.src = frame.dataset.src;
-      }, (index + 1) * 5000);
-    });
-  </script>
+  <iframe src="https://memomax2.github.io/memo/"></iframe>
+
+</div>
 
 </body>
 </html>
