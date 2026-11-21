@@ -8,5 +8,18 @@
 </head>
 <body>
   <h1>ميموماكس 2</h1>
+  
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./sw.js")
+    .then(function(registration) {
+        console.log("Montage connected successfully");
+    })
+    .catch(function(error) {
+        console.log("Montage error:", error);
+    });
+}
+</script>
+
 </body>
 </html>
